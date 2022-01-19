@@ -77,5 +77,15 @@
             color: #fff;
         }
     }
+    &__social {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 }
