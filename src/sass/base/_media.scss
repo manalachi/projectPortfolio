@@ -22,6 +22,25 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 60px 40px 0;
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 80px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -43,6 +62,27 @@
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 60px 20px 0;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 60px;
+        }
+    }
+    .skills {
+        &__items {
+            padding: 0 auto;
+        }
+        &__ratings {
+            grid-template: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            column-gap: 0;
+            padding: 0;
+            &-line {
+                width: 100%;
             }
         }
     }
@@ -78,6 +118,44 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 40px;
             }
+        }
+    }
+    .resume {
+        .title {
+            &_fz36 {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        .divider {
+            margin: 15px auto 0;
+        }
+        &__wrapper {
+            padding: 40px 20px 0;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+        &__item {
+            &-head {
+                padding: 30px 0 0 100px;
+            }
+            &-body {
+                padding-left: 40px;
+            }
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__items {
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
         }
     }
 }
@@ -116,6 +194,26 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {      
+        &__wrapper {
+            grid-template-columns:  1fr;
+            row-gap: 40px;
+        }  
+        &__item {
+            &-body {
+                margin-top: 22px;
+                width: 250px;
+            }
+        }  
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 300px);
         }
     }
 }
