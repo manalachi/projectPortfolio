@@ -200,6 +200,9 @@
         &__wrapper {
             grid-template-columns:  1fr;
             row-gap: 40px;
+        }
+        &__column {
+            margin: 0 auto;
         }  
         &__item {
             &-body {
